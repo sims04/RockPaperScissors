@@ -1,1 +1,1 @@
-This is a game # tictactoe
+This is a game called Rock paper Scissors
