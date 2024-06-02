@@ -6,27 +6,92 @@
     <title>Rock Paper Scissors</title>
 
     <style>
-      h1{
-        font-family: sans-serif;
-        font-size: large;
-        font-style: italic;
-        color: brown;
-      }
+     
+     body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgb(255, 250, 238);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-      body {
-        width: 50%;
-        max-width: 800px;
-        min-width: 480px;
-        margin: 0 auto;
-      }
-      
+        h1 {
+            font-family: "Poppins", sans-serif;
+            font-size: xx-large;
+            color: rgb(245, 121, 170);
+            margin-bottom: 20px; /* Space below the title */
+            text-align: center; /* Center the text */
+        }
+
+        .flex-parent {
+            display: flex;
+            justify-content: center; /* Center the child elements horizontally */
+            align-items: center; /* Center the child elements vertically */
+            gap: 20px; /* Space between the two containers */
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column; /* Arrange items in a column */
+            justify-content: center; /* Centers items vertically within the container */
+            align-items: flex-start; /* Aligns items to the left */
+            height: 40vh; /* Specific height */
+            width: 15vw; /* Specific width */
+            margin-top: 10vw;
+            box-sizing: border-box; /* Include padding in the width and height */
+            padding-left: 5px; /* Add some spacing from the left edge */
+            background-color: rgb(240, 218, 240);
+        }
+
+        #Paper, #Rock, #Scissor {
+            border-style: dotted;
+            border-color: grey;
+            border-radius: 20%;
+            width: 80px;
+            height: 65px;
+            margin-bottom: 30px; /* Optional, depending on desired spacing */
+        }
+
+        #Paper { background-color: rgb(242, 191, 191); }
+        #Rock { background-color: rgb(161, 181, 227); }
+        #Scissor { background-color: rgb(160, 218, 160); }
+
+        #resultsContainer {
+            display: flex;
+            flex-direction: column; /* Arrange items in a column */
+            justify-content: flex-start; /* Align items at the top */
+            align-items: flex-start; /* Align items to the left */
+            height: 40vh; /* Specific height */
+            width: 20vw; /* Specific width */
+            box-sizing: border-box; /* Include padding in the width and height */
+            padding: 10px;
+            margin-top: 10vw;
+            background-color: pink;
+            overflow-y: auto; /* Make it scrollable if content overflows */
+        }
     </style>
-  </head>
-
-  <body>
+</head>
+<body>
     <h1>Rock Paper Scissors</h1>
+    <div class="flex-parent">
+        <div id="container">
+            <button id="Paper">Paper</button>
+            <button id="Rock">Rock</button>
+            <button id="Scissor">Scissor</button>
+        </div>
+        <div id="resultsContainer">
+            <h3>Results:</h3>
+            <div id="results"></div>
+        </div>
+    </div>
+<script type="text/javascript" src="javascript.js">
 
-<script type="text/javascript" src="javascript.js"></script>
+
+
+</script>
     
           
  </body>
