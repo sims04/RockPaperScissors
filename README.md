@@ -38,7 +38,7 @@ This project is an interactive **Rock Paper Scissors game** built using **HTML**
 
 ---
 
-## Installation and Usage
+## Installation
 
 1. **Clone the Repository**:
    ```bash
